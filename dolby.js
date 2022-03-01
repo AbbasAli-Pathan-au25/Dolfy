@@ -38,7 +38,6 @@ app.post("/sent",async(req,res)=>{
 
 
 
-    //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
   sgMail.setApiKey("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")
 
   const msg={
