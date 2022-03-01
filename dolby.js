@@ -3,6 +3,7 @@ const app=express()
 const bodyParser=require("body-parser")
 const {engine}=require("express-handlebars")
 const sgMail=require("@sendgrid/mail")
+require('dotenv').config()
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
@@ -38,7 +39,7 @@ app.post("/sent",async(req,res)=>{
 
 
 
-  sgMail.setApiKey("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")
+  sgMail.setApiKey(process.env.KEY)
 
   const msg={
       to: "abbasali.pathan@gmail.com",
