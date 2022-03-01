@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    box-sizing: border-box;
+    height: 10vh;
+    width: 100%;
+}
+.logo{
+    margin-left: 35%;
+    margin-top: 2%;
+    height: 100px;
+    width: 200px;
+    border: 10px solid white;
+    border-radius: 5%;
+    
+}
+.navlist{
+    display: flex;
+    align-items: center;
+    width:auto;
+    text-align: right;
+    padding-left: 30%;
+
+}
+.navlist li{
+    list-style: none;
+    margin-top: 30px;
+    width: 50%;
+    margin-left: 100px;
+    transition: all 0.3s ease-in-out;
+}
+.navlist li a{
+
+    text-decoration: none;
+    color:rgb(77, 30, 3);
+    text-decoration: solid;
+    font-size: 21px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    
+}
+.navlist li a:hover{
+
+    text-decoration: none;
+    color:rgba(77, 30, 3, 0.85);
+    padding-left: 5px; 
+    
+}
+
+
+
+.background{
+    background: rgba(0, 0, 0, 0.7) url('bg.jpeg');
+    background-size: 101%;
+    
+}
+.firstsection
+{
+    height: 100vh;
+    
+}
+.button {
+    color:white;
+     margin-top: 3%; 
+     margin-left:23%;
+     padding: 1% 2% 1% 2%;
+     font-size: 16px; 
+     border:white solid 2px;
+    background:rgb(184, 124, 69);
+    text-decoration: none;
+    
+}
+a{
+    text-decoration: none;
+    color: #332507;
+}
+.firstsection :hover{
+    background: none;
+    border-color:rgb(184, 124, 69);
+    color:rgb(105, 59, 21);
+}
+.paras{
+    width: 56%;
+}
+
+.secright{
+    height: 120vh;
+    display: flex;
+    margin: 4% 0% 0% 5%;
+
+}
+.sectiontag{
+    font-size: 50px;
+    max-width: 69%;
+}
+.sectionSubtag{
+    font-size: 33px;
+    font-family: system-ui;
+}
+.back{
+    
+  
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+    background-blend-mode: soft-light;
+}
+
+.thirdsection{
+    background: rgba(11, 80, 14,5.5) url('banners.jpeg');
+    height: 50vh;
+    background-blend-mode: color-dodge;
+    display: flex;
+    
+    
+}
+.boarding{
+    font-size: 50px;
+    color: white;
+    width: 80%;
+    justify-content: right;
+    align-items: right;
+    padding-left: 7%;
+    padding-top: 8%;
+    text-align: right;
+
+
+}
+.big{
+    font-size: 50px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 50px;
+    padding-bottom: 8px;
+}
+
+.small{
+    font-size: 20px;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 1px 30px;
+    padding-bottom: 20%;
+
+}
+.thirdsection button{
+font-size: large;
+text-align: right;
+padding:3%;
+color: white;
+border-color: white;
+justify-content: right;
+align-items: right;
+background: none;
+margin:3%;
+}
+
+.fourthsection{ 
+    
+    padding-top: 5%;
+    height: 120vh;
+}
+.products{
+    padding-left: 5%;
+}
+.separate{
+    display: flex;
+    margin-left: 11%;
+   
+}
+.products img{
+    height: 380px;
+    
+    margin-top: 5%;
+}
+.contactus{
+    display: flex;
+    height: 80vh;
+    color: rgb(239 234 232);
+    text-align: left;
+    justify-content:left;
+    padding: 6% 5%;
+    background:rgb(85, 36, 8) url('2banners.jpeg');
+    background-blend-mode: multiply;
+
+    
+}
+.products  :hover{
+    color: green;
+    cursor: pointer;
+}
+.contactus input{
+    margin-top: 10px;
+    text-align: left;
+}
+.fifthsec{
+    max-height: 100vh;
+    padding-top: 5%;
+    height: 100vh;
+    
+}
+.fifthsec h1{
+    font-size :50px;
+    color: #332507;
+    padding-left: 5%;
+}
+.message{
+    height: 20vh;
+    background-color: rgb(187 206 209);
+    font-size: 35px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    padding: 3% 0% 0% 5%;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    color: #332507;
+}
+.message button{
+
+    margin: -1% 2% 3% 5%;
+    font-size: 25px;
+    background-color: rgb(187 206 209) ;
+    color: #332507;
+    border-color:  #332507;
+}
+.message button:hover{
+    color: white;
+    border-color:white;
+    ;
+}
+.down{
+    background-color: #59564d;;
+    height: 60vh;
+    display: flex;
+    align-items: right;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+.down li{
+    list-style: none;
+    margin-top: 30px;
+    width: 60%;
+   
+    
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 1800px;
+    margin: auto;
+}
+.footer-col{
+    width: 33%;
+    padding: 26px 31px;
+}
+
+.footer-col h4{
+    font-size: 20px;
+    color: white;
+    text-transform:capitalize;
+    margin-bottom: 30px;
+    font-family: 'Lato', sans-serif;
+}
+
+.footer-col ul li :not(:last-child){
+    margin-bottom: 20px;
+}
+
+.footer-col ul li a{
+    font-size: 18px;
+    
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+  
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 10px;
+}
+.copyright{
+    height: 7vh;
+    background-color: rgb(187 206 209);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #332507;
+    padding-top: 1%;
+    font-weight: 400;
+    font-family:  'Lato', sans-serif;
+}
+.initial-contact{
+    background:  url('abt1.jpg');
+    height: 70vh;
+    background-blend-mode: darken;
+    
+}
+.initial-contact img{
+    margin-left: 5%;
+}
+.initial-contact h1{
+    font-size: 70px;
+    color:white;
+    font-weight: 600;
+    font-family: 'Lato',sans-serif;
+    margin: 5% 0% 0% 5%;
+}
+
+.initial-contact p{
+    text-align: right;
+    color: #ffffff;
+    margin-top: 1%;
+    font-size: 25px;
+    
+    font-family: 'Lato',sans-serif;
+    margin-right: 10%;
+    
+}
+.navlist-about{
+    display: flex;
+    align-items: center;
+    width:auto;
+
+    padding-left: 25%;
+}
+.navlist-about li{
+    list-style: none;
+    margin-top: -149px;
+    width: 15%;
+    
+    transition: all 0.3s ease-in-out;
+}
+.navlist-about li a{
+
+    text-decoration: none;
+    color:white;
+    text-decoration: solid;
+      font-size: 22px;
+    font-family: 'Lato', sans-serif; 
+    
+}
+.navlist-about li a:hover{
+
+   text-decoration: none;
+    color:rgba(255, 255, 255, 0.762);
+    padding-left: 5px;  
+    
+}
+
+.history h2{
+    font-size: 42px;
+    color: #000000;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-left: 15%;
+    background: none;
+    font-family: 'Lato', sans-serif;
+
+}
+.history p{
+    width: 35%;
+    margin-left: 15%;
+ font-size: 20px;
+ font-family: system-ui;
+text-align: justify;
+padding-top: 3%;
+color:#000000b5;
+            
+}
+.history img{
+    height: 55%;
+    width: 30%;
+    align-items: right;
+    margin-left: 5%;
+    margin-top: -5%;
+}
+.border{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 35%;
+    margin: 5% 0% 1% 10%;
+    border: 1px dotted #0000007c;
+    padding: 5% 5% 3% 5%;
+}
+.elentara{
+    margin-top: 5%;
+    margin-left: 5%;
+    font-family: 'Lato'sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    
+}
+.elentara img{
+    width: 90%;
+    cursor: pointer;
+    margin-top: 2%;
+}
+.ultima{
+    display: flex;
+    width: 50%;
+
+}
+#navlist-about{
+
+
+margin-left: 15%;
+
+
+}
+
+
+
+
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Products</title>
+</head>
+
+<body>
+
+    <section class="initial-contact">
+
+
+
+        <nav>
+            <div class="navigation-about">
+                 <a href="/"><img class="logo" src="logo.jpeg" alt="logo"></a>
+
+            </div>
+            <div id="navlist-about">
+            <ul class="navlist-about">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/products">Products</a></li>
+                
+
+                <li><a href="/contact">Contact</a></li>
+
+            </ul>
+            </div>
+
+        </nav>
+
+        <h1>Prodcut Category</h1>
+        <p><a style="color: white;" href="/">Home</a>&nbsp/&nbsp<a style="color: white;"
+                href="/products">Product Category</a></p>
+    </section>
+
+    <section class="elentara">
+        <a href="/elantra">
+            <h1>
+                Elentara Premium Groov Door
+            </h1>
+            <h1 style="margin-top: -2%; color:#6a4635;">
+                ____
+            </h1>
+            <img src="elentara1.jpg" alt="">
+        </a>
+        <a href="/ultima">
+        <div style="display: flex;">
+            <div>
+                <h1 style="margin-top: 1%;padding-top:40%;padding-left: 5%;">
+                    Ultima Veneer Door
+                </h1>
+                <h1 style="margin-top: -6%;padding-left: 16px; color:#6a4635;">
+                    ____
+                </h1>
+            </div>
+
+            <img style="margin-left:10%; width: 50%;" src="ultima.jpg" alt="">
+        </div>
+    </a>
+
+    <a href="/solid">
+        <h1 style="margin-top: 3%;">
+            Solid Primer Coated and WPC Doors
+        </h1>
+        <h1 style="margin-top: -2%; color:#6a4635;">
+            ____
+        </h1>
+        <img style="width: 80%;" src="soliddoors.jpg" alt="">
+        </a>
+        <a href="/pooja">
+        <div style="display: flex; margin-top: 2%;">
+
+            <img style="width: 50%;" src="pooja.jpg" alt="">
+            <div style="padding-top: 15%; padding-left: 5%;">
+                <h1 style="margin-top: 3%;"id="pooja">
+                    Decor Pooja Door
+                </h1>
+                <h1 style="margin-top: -7%; color:#6a4635;">
+                    ____
+                </h1>
+            </div>
+
+        </div></a>
+    </a>
+    </section>
+    <section class="down" style="background-color: #000000bb;">
+        <div class="firstblock" style="width: 40%;">
+            <img class="logo" src="logo.jpeg" alt="logo" style="margin-left:10%">
+            <p
+                style="max-width: 100%;font-size: large;font-family:'Lato', sans-serif;font-size:140%;color:white; padding:5% 0% 0% 10%;">
+                Dolfy Doors has been a leading trading house for a wide array of Door and allied products
+                since 1970! With the experience of over 4 decades of happy customers,
+                we are uniquely placed to offer the widest range of products at the best of prices to our customers
+            </p>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4 style="padding-left: 47px;">INFORMATION</h4>
+
+                        <ul style="padding-left: 47px;">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about">About</a></li>
+                            <li><a href="/products">Products</a></li>
+                           
+                            <li><a href="/contact">Contact</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="footer-col">
+                        <h4>EXPLORE&nbspPRODUCTS&nbsp&nbsp;</h4>
+
+                        <ul>
+                            <li><a href="/elantra">Elentara&nbspPremium&nbspGroov Door</a></li>
+                            <li><a href="/ultima">Ultima&nbspVeneer&nbspDoor</a></li>
+                            <li><a href="/pooja">Decora&nbspPooja&nbspDoor</a></li>
+                            <li><a href="/solid">WPC Door</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="footer-col">
+                        <h4>OUR ADDRESS</h4>
+
+                        <ul>
+                            <li><a href="#UTTAM TRADING COMPANY">Uttam trading company</a></li>
+                            <li><a href="#E-mail: uttamtradingcoblr@gmail.com">E-mail: uttamtradingcoblr@gmail.com</a>
+                            </li>
+                            <li><a href="#Address- # 54 ,3rd Main road,Sri Raghavendra layout,">L.R.Bande,Kavalbyrasandra,
+                                    R.T.Nagar </a></li>
+                            <li><a href="#Bangalore">Bangalore&nbsp560032</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+    </section>
+    <section class="copyright">
+        <p>&copy;2022 DOLFY DOORS.All Rights Reserved</p>
+
+    </section>
+
+</body>
+
+</html>

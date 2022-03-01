@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    box-sizing: border-box;
+    height: 10vh;
+    width: 100%;
+}
+.logo{
+    margin-left: 35%;
+    margin-top: 2%;
+    height: 100px;
+    width: 200px;
+    border: 10px solid white;
+    border-radius: 5%;
+    
+}
+.navlist{
+    display: flex;
+    align-items: center;
+    width:auto;
+    text-align: right;
+    padding-left: 30%;
+
+}
+.navlist li{
+    list-style: none;
+    margin-top: 30px;
+    width: 50%;
+    margin-left: 100px;
+    transition: all 0.3s ease-in-out;
+}
+.navlist li a{
+
+    text-decoration: none;
+    color:rgb(77, 30, 3);
+    text-decoration: solid;
+    font-size: 21px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    
+}
+.navlist li a:hover{
+
+    text-decoration: none;
+    color:rgba(77, 30, 3, 0.85);
+    padding-left: 5px; 
+    
+}
+
+
+
+.background{
+    background: rgba(0, 0, 0, 0.7) url('bg.jpeg');
+    background-size: 101%;
+    
+}
+.firstsection
+{
+    height: 100vh;
+    
+}
+.button {
+    color:white;
+     margin-top: 3%; 
+     margin-left:23%;
+     padding: 1% 2% 1% 2%;
+     font-size: 16px; 
+     border:white solid 2px;
+    background:rgb(184, 124, 69);
+    
+}
+.firstsection :hover{
+    background: none;
+    border-color:rgb(184, 124, 69);
+    color:rgb(105, 59, 21);
+}
+.paras{
+    width: 56%;
+}
+
+.secright{
+    height: 120vh;
+    display: flex;
+    margin: 4% 0% 0% 5%;
+
+}
+.sectiontag{
+    font-size: 50px;
+    max-width: 69%;
+}
+.sectionSubtag{
+    font-size: 33px;
+    font-family: system-ui;
+}
+.back{
+    
+  
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+    background-blend-mode: soft-light;
+}
+
+.thirdsection{
+    background: rgba(11, 80, 14,5.5) url('banners.jpeg');
+    height: 50vh;
+    background-blend-mode: color-dodge;
+    display: flex;
+    
+    
+}
+.boarding{
+    font-size: 50px;
+    color: white;
+    width: 80%;
+    justify-content: right;
+    align-items: right;
+    padding-left: 7%;
+    padding-top: 8%;
+    text-align: right;
+
+
+}
+.big{
+    font-size: 50px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 50px;
+    padding-bottom: 8px;
+}
+
+.small{
+    font-size: 20px;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 1px 30px;
+    padding-bottom: 20%;
+
+}
+.thirdsection button{
+font-size: large;
+text-align: right;
+padding:3%;
+color: white;
+border-color: white;
+justify-content: right;
+align-items: right;
+background: none;
+margin:3%;
+}
+
+.fourthsection{ 
+    
+    padding-top: 5%;
+    height: 120vh;
+}
+.products{
+    padding-left: 5%;
+}
+.separate{
+    display: flex;
+    margin-left: 11%;
+   
+}
+.products img{
+    height: 380px;
+    
+    margin-top: 5%;
+}
+.contactus{
+    display: flex;
+    height: 80vh;
+    color: rgb(239 234 232);
+    text-align: left;
+    justify-content:left;
+    padding: 6% 5%;
+    background:rgb(85, 36, 8) url('2banners.jpeg');
+    background-blend-mode: multiply;
+
+    
+}
+.products  :hover{
+    color: green;
+    cursor: pointer;
+}
+.contactus input{
+    margin-top: 10px;
+    text-align: left;
+}
+.fifthsec{
+    max-height: 100vh;
+    padding-top: 5%;
+    height: 100vh;
+    
+}
+.fifthsec h1{
+    font-size :50px;
+    color: #332507;
+    padding-left: 5%;
+}
+.message{
+    height: 20vh;
+    background-color: rgb(187 206 209);
+    font-size: 35px;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    padding: 3% 0% 0% 5%;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    color: #332507;
+}
+.message button{
+
+    margin: -1% 2% 3% 5%;
+    font-size: 25px;
+    background-color: rgb(187 206 209) ;
+    color: #332507;
+    border-color:  #332507;
+}
+.message button:hover{
+    color: white;
+    border-color:white;
+    ;
+}
+.down{
+    background-color: #59564d;;
+    height: 60vh;
+    display: flex;
+    align-items: right;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+.down li{
+    list-style: none;
+    margin-top: 30px;
+    width: 60%;
+   
+    
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 1800px;
+    margin: auto;
+}
+.footer-col{
+    width: 33%;
+    padding: 26px 31px;
+}
+
+.footer-col h4{
+    font-size: 20px;
+    color: white;
+    text-transform:capitalize;
+    margin-bottom: 30px;
+    font-family: 'Lato', sans-serif;
+}
+
+.footer-col ul li :not(:last-child){
+    margin-bottom: 20px;
+}
+
+.footer-col ul li a{
+    font-size: 18px;
+    
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    color: white;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 10px;
+}
+.copyright{
+    height: 7vh;
+    background-color: rgb(187 206 209);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #332507;
+    padding-top: 1%;
+    font-weight: 400;
+    font-family:  'Lato', sans-serif;
+}
+.initial-contact{
+    background:  url('abt1.jpg');
+    height: 70vh;
+    background-blend-mode: darken;
+    
+}
+.initial-contact img{
+    margin-left: 5%;
+}
+.initial-contact h1{
+    font-size: 70px;
+    color:white;
+    font-weight: 600;
+    font-family: 'Lato',sans-serif;
+    margin: 5% 0% 0% 5%;
+}
+
+.initial-contact p{
+    text-align: right;
+    color: #ffffff;
+    margin-top: 1%;
+    font-size: 25px;
+    
+    font-family: 'Lato',sans-serif;
+    margin-right: 10%;
+    
+}
+.navlist-about{
+    display: flex;
+    align-items: center;
+    width:auto;
+
+    padding-left: 25%;
+}
+.navlist-about li{
+    list-style: none;
+    margin-top: -149px;
+      width: 15%;
+   
+    transition: all 0.3s ease-in-out;
+}
+.navlist-about li a{
+
+    text-decoration: none;
+    color:white;
+    text-decoration: solid;
+      font-size: 22px;
+    font-family: 'Lato', sans-serif; 
+    
+}
+.navlist-about li a:hover{
+
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.762);
+    padding-left: 5px; 
+   
+    
+}
+
+.history h2{
+    font-size: 42px;
+    color: #000000;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-left: 15%;
+    background: none;
+    font-family: 'Lato', sans-serif;
+
+}
+.history p{
+    width: 35%;
+    margin-left: 15%;
+ font-size: 20px;
+ font-family: system-ui;
+text-align: justify;
+padding-top: 3%;
+color:#000000b5;
+            
+}
+.history img{
+    height: 55%;
+    width: 30%;
+    align-items: right;
+    margin-left: 5%;
+    margin-top: -5%;
+}
+.border{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 35%;
+    margin: 5% 0% 1% 10%;
+    border: 1px dotted #0000007c;
+    padding: 5% 5% 3% 5%;
+}
+.elentara{
+    margin-top: 5%;
+    margin-left: 5%;
+    font-family: 'Lato'sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    
+}
+.elentara img{
+    width: 90%;
+    cursor: pointer;
+    margin-top: 2%;
+}
+.ultima{
+    display: flex;
+    width: 50%;
+
+}
+
+a{
+    text-decoration: none;
+    color: #332507;
+}
+#navlist-about{
+
+
+margin-left: 15%;
+
+
+}
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>About Us</title>
+</head>
+
+<body>
+   <section class="initial-contact">
+   
+       
+
+        <nav >
+            <div class="navigation-about">
+                <a href="/"><img class="logo" src="logo.jpeg" alt="logo"></a>
+
+            </div>
+           <div id="navlist-about">
+            <ul class="navlist-about">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/products">Products</a></li>
+                
+
+                <li><a href="/contact">Contact</a></li>
+
+            </ul>
+            </div>
+    
+        </nav>
+
+
+
+       <h1>About Us</h1>
+       <p><a style="color: white;" href="/">Home</a>&nbsp/&nbsp<a style="color: white;" href="/about">About</a></p>
+
+   </section> 
+   <section class="secright">
+    <div class="paras">
+        
+        <h1 class="sectiontag">Exquisite craftsmanship for your spaces</h1>
+        <h1 style="color: green;">___</h1>
+        <p class="sectionSubtag">Home furnishing doors with premium
+            <br>quality materials sourced from
+            all over <br>the world.
+        </p>
+        <br>
+        <p style="font-size: 22px;font-family: system-ui;
+            text-align: justify;padding-right: 5%;color:#000000bd;">DOLFY Doors has been a leading trading house for a wide
+            array of door and allied products since1970! We provide unique designs with
+            a superior quality finishes at stunning prices. Primarily, we offer a complete
+            range of moulded panel doors with comprehensive workmanship and highly durable
+            quality which meets the international market standards. Further, we cater to varied
+            requirements of construction, interior designing, and architecture industry with 4 decades of
+            experience.</p>
+    </div>
+    <div class="thumbnail">
+        <img src="sample1.jpeg" alt="logo" class="imgfluid">
+    </div>
+
+</section>
+<section class="history">
+<h2>History</h2>
+<h1 style="padding-left: 15%;color:green; font-weight: bolder;">___</h1>
+<div style="display:flex">
+<p>Dolfy Doors is one of the world’s largest door and window manufacturers, operating in India since 1970.
+     We design, produce, and distribute an extensive range of interior and exterior doors,
+     wood, vinyl, and other related products to renovate your spaces, be it commercial or residential.</p>
+  <img src="mission.jpeg" alt="mission">
+    </div>
+</section>
+
+<section class="history">
+    <h2 style="text-align: center;padding-left: 3%;margin-top: 5%;">Vision</h2>
+    <h1 style="padding-left: 18%;color:green;text-align: center; font-weight: bolder;">___</h1>
+    <div style="display:flex">
+        <img style= "margin-left: 15%;margin-top: -15%;" src="history.jpeg" alt="mission">
+    <p style="margin-left: 10%; font-family: system-ui;
+    text-align: justify;
+    padding-top: 3%;
+    color:#000000b5;">OUR VISION is 
+        to help people to create their
+        real ideas. customers are at the
+        heart of every thing we will achieve
+        success through strong team work
+        using the best technologies.
+        Our Aspiration is  to delight our
+        customers with innovative
+        systems solutions for bathrooms
+        featuring professional designs
+        top quality and great user benefits.
+         </p>
+      
+        </div>
+    </section>
+    <section class="history">
+        <h2 style="margin-top: 4%;">Who We Are:</h2>
+        <h1 style="padding-left: 15%;color:green; font-weight: bolder;">___</h1>
+        <div style="display:flex">
+        <p>We are a leading trading & 
+            manufacturing house for a wide array of Door and allied products in Bangalore.
+            We focus on innovation
+            in design as we continuously
+            strive to bring you the best
+            designs from across the globe.
+            
+              Our each product
+            Promises you the best quality
+            wide choice to suit each
+            individual persons requirement
+            </p>
+          <img style="height: 40%;margin-top: -8%;margin-left: 5%;"src="vision.jpg" alt="mission">
+            </div>
+        </section>
+
+    
+<section class="history">
+    <h2 style="text-align: center;padding-left: 3%;margin-top: 5%;">What We Do</h2>
+    <h1 style="padding-left: 8%;color:green;text-align: center; font-weight: bolder;">___</h1>
+    <div style="display:flex">
+        <img style= "margin-left: 15%;margin-top: -20%;" src="whoweare.jpeg" alt="mission">
+    <p style="margin-left: 5%; font-family: system-ui;
+    text-align: justify;
+    padding-top: 3%;
+    color:#000000b5;">We are into manufacturing and trading of all types of doors and timbers;
+     you name it & we have it! Our product range includes Home Furnishing Doors of different types
+      and variants i.e., African Teak Doors, Flush Doors, Veneer Groove Doors,
+      CP Laminate Doors, Membrane Doors, Moulded Panel/HDF Primer Doors,
+        WPC Doors, Frames, and many others.
+         </p>
+      
+        </div>
+    </section>
+
+    <section class="history">
+        <h2 style="margin-top: 4%;">What Matters To Us:</h2>
+        <h1 style="padding-left: 15%;color:green; font-weight: bolder;">___</h1>
+        <div style="display:flex">
+        <p>Doors are not just products, but they are the main showpiece to your home. 
+            Any guest who enters the house/room starts imagining about the place by looking at the entrance, 
+            and this is the reason ages ago emperors and kings used to keep their entrance strong and attractive.
+            what matters to us the most is customer satisfaction with quality products and service is our top priority. 
+            We believe that customer is not a one-time purchaser, but they are a point for creating more referrals 
+            and this is the reason we still survive in this market.
+            </p>
+          <img style="height: 40%;margin:-8% 0% 5% 5%"src="lastimage.jpg" alt="mission">
+            </div>
+
+        </section>
+        <section class="message">
+            <P>Have a project for us?</P>
+            <p style="font-weight: 700;">&nbspGet in touch with our team.</p>
+           <button class="button">
+            <a href="/contact">Contact Us</a>
+            </button>
+
+    
+        </section>
+        
+        <section class="down" style="background-color: #000000bb;">
+            <div class="firstblock" style="width: 40%;">
+                <img class="logo" src="logo.jpeg" alt="logo" style="margin-left:10%">
+                <p
+                    style="max-width: 100%;font-size: large;font-family:'Lato', sans-serif;font-size:140%;color:white; padding:5% 0% 0% 10%;">
+                    Dolfy Doors has been a leading trading house for a wide array of Door and allied products
+                    since 1970! With the experience of over 4 decades of happy customers,
+                    we are uniquely placed to offer the widest range of products at the best of prices to our customers
+                </p>
+            </div>
+            <footer >
+                <div class="container" >
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4 style="padding-left: 47px;">INFORMATION</h4>
+    
+                            <ul style="padding-left: 47px;">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/about">About</a></li>
+                                <li><a href="/products">Products</a></li>
+                               
+                                <li><a href="/contact">Contact</a></li>
+                            </ul>
+    
+                        </div>
+                        <div class="footer-col" >
+                            <h4>EXPLORE&nbspPRODUCTS&nbsp&nbsp;</h4>
+    
+                            <ul >
+                                <li><a href="/elantra">Elentiara&nbspPremium&nbspGrove Door</a></li>
+                                <li><a href="/ultima">Ultima&nbspVeneer&nbspDoor</a></li>
+                                <li><a href="/pooja">Decora&nbspPooja&nbspDoor</a></li>
+                                <li><a href="/solid">WPC Door</a></li>
+                            </ul>
+    
+                        </div>
+                        <div class="footer-col">
+                            <h4>OUR ADDRESS</h4>
+    
+                            <ul>
+                                <li><a href="#UTTAM TRADING COMPANY">Uttam trading company</a></li>
+                                <li><a href="#E-mail: uttamtradingcoblr@gmail.com">E-mail: uttamtradingcoblr@gmail.com</a></li>
+                                <li><a href="#Address- # 54 ,3rd Main road,Sri Raghavendra layout,">L.R.Bande,Kavalbyrasandra, R.T.Nagar </a></li>
+                                <li><a href="#Bangalore">Bangalore&nbsp560032</a></li>
+                            </ul>
+    
+                        </div>
+                    </div>
+    
+                </div>
+            </footer>
+    
+        </section>
+        <section class="copyright">
+            <p>&copy;2022 DOLFY DOORS.All Rights Reserved</p>
+    
+        </section>
+
+
+</body>
+</html>
