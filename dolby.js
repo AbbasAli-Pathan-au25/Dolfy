@@ -42,9 +42,9 @@ app.post("/sent",async(req,res)=>{
   sgMail.setApiKey(process.env.KEY)
 
   const msg={
-      to: "abbasali.pathan@gmail.com",
-      from: "d_o_l_f_y@outlook.com",
-      subject:"Dolfy",
+      to: "fathimasaniya08@gmail.com",
+      from: "doors_dolfy@outlook.com",
+      subject:"DolfyDoors",
       text:"Name : "+new_name+"\n"+"Email : "+new_email+"\n"+"Mobile number : "+new_mobile+"\n"+new_name+" message : "+new_message
   }
 
