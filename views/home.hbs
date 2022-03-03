@@ -8,55 +8,133 @@
     padding: 0;
     box-sizing: border-box;
 }
-.navbar{
-    display: flex;
-    box-sizing: border-box;
-    height: 10vh;
+body,html{
+    margin: 0;
+    padding: 0;
     width: 100%;
+    height: 100vh;
+    background-color: rgba(248, 243, 243, 0.394);
 }
+.Section_top{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(images/image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 10s infinite ease-in-out;
+    margin-top: 3%;
+    border: black 2px solid;
+}
+.content{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+
+}
+
+
+
+@keyframes change{
+    0%
+    {
+        background-image: url(banner.jpeg);
+    }
+    50%
+    {
+        background-image: url(slider2.jpeg);
+    }
+    100%
+    {
+        background-image: url(slider3.jpeg);
+    }
+
+  
+}
+
 .logo{
-    margin-left: 35%;
-    margin-top: 2%;
-    height: 100px;
-    width: 200px;
-    border: 10px solid white;
+    height: 80px;
+    width: 150px;
+    border: 10px ridge white;
     border-radius: 5%;
     
 }
-.navlist{
-    display: flex;
-    align-items: center;
-    width:auto;
-    text-align: right;
-    padding-left: 30%;
-   
-    
+.links{
 
-}
-.navlist li{
-    list-style: none;
-    margin-top: 30px;
-    width: 50%;
-    margin-left: 100px;
-    transition: all 0.3s ease-in-out;
-}
-.navlist li a{
 
-    text-decoration: none;
-    color:rgb(77, 30, 3);
+   color:rgb(77, 30, 3);
     text-decoration: solid;
-    font-size: 21px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 10px;
+   
 
-    
+
+
 }
-.navlist li a:hover{
 
+.links:hover{
+
+color:rgba(77, 30, 3, 0.83) ;
+padding: 5px;
+border:rgb(77, 30, 3) solid 1px;
+box-shadow: #00000034 2px 2px 2px 2px;
+border-radius: 5px;
+
+
+
+}
+
+.bar{
+
+margin-right: 10%;
+
+
+
+}
+#nav_container{
+
+margin-left: 5%;
+
+
+}
+#home_{
+  margin-left: 26.5%;
+ 
+
+}
+
+.button {
+    color:white;
+   
+    margin-left: -80%;
+    margin-top: -2%;
+     padding: 1% 2% 1% 2%;
+     font-size: 16px; 
+    border: none;
+    background:rgba(0, 0, 0, 0.374);
     text-decoration: none;
-    color:rgba(77, 30, 3, 0.85);
-    padding-left: 5px; 
+   border: rgba(255, 255, 255, 0.7) 1px solid;
+
+    
     
 }
+
+.button:hover{
+
+background-color: rgba(255, 255, 255, 0.619);
+color: black;
+cursor: pointer;
+
+}
+
+
 
 
 
@@ -70,17 +148,7 @@
     height: 100vh;
     
 }
-.button {
-    color:white;
-     margin-top: 3%; 
-     margin-left:23%;
-     padding: 1% 2% 1% 2%;
-     font-size: 16px; 
-     border:white solid 2px;
-    background:rgb(184, 124, 69);
-    text-decoration: none;
-    
-}
+
 a{
     text-decoration: none;
     color: #332507;
@@ -445,8 +513,9 @@ margin-left: 15%;
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cde8601e7e.js" crossorigin="anonymous"></script>
     
-    <title>DOLFY DOORS</title>
+   
     
 </head>
 
@@ -456,44 +525,37 @@ margin-left: 15%;
 <body>
 
 
-    <div class="navbar" style="background-color:rgba(255, 255, 255, 0.639);height:15%;position:fixed;border-bottom:solid 2px rgba(0, 0, 0, 0.224)">
+   <div>
+ <div style="padding-top: 10px;margin-left: 3%;"><a href="/"><img class="logo" src="logo.jpeg" alt="logo"></a></div>
+ <div style="margin-top: -4%;">
+<span class="bar" id="home_"> <a class="links" href="/"><i class="fa-solid fa-house"></i>&nbsp;  Home</a> </span>
+<span class="bar" id="about_"> <a class="links" href="/about"><i class="fa-solid fa-question"></i></i>&nbsp;  About</a> </span>
+<span class="bar" id="products_"> <a class="links" href="/products"><i class="fa-solid fa-door-open"></i>&nbsp;  Products</a> </span>
+<span class="bar" id="contact_"> <a class="links" href="/contact"><i class="fa-solid fa-address-book"></i>&nbsp; Contact</a> </span>
+</div>
+</div>
 
-        <div class="navigation">
-            <a href="/"><img class="logo" src="logo.jpeg" alt="logo"></a>
-        </div>
-
- <ul class="navlist">
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/products">Products</a></li>
-            
-            <li><a href="/contact">Contact</a></li>
-
-        </ul>
-
-      
-
-    </div>
-     
-   
-    <section class="background firstsection ">
-        <p style="padding: 10% 0% 0% 0%;; text-align: center;
-            font-family: revert; font-size: 31px;width: 40%;color:rgb(68, 35, 5);">
-            'DOLFY DOORS' the name that ensure <br>
-            quality and extra ordinary creation of designing.
-            <br>
-            <p style="padding-left: 12%;">
-                __________
+    <div class="Section_top" style="border-bottom: rgb(77, 30, 3) 10px solid;border-top: rgb(77, 30, 3) 10px solid;">
+        <div class="content" style="background-color: rgba(0, 0, 0, 0.374);width: 100%;height: 100%;">
+            <p style="font-family: revert; font-size: 35px;color:white;margin-top: 15%;">'DOLFY DOORS' the name that ensure <br><br>
+                quality and extra ordinary creation of designing.</p>
+               
+            <p style=" color: white;font-size:xx-large;margin-top:1%;">
+               <b>________________</b> 
             </p>
             <br>
-        <p style="text-align: center;width: 40%;
-        width: 40%;
-        font-family: sans-serif;
-        font-size: 20px;">It has great durability and finishing</p>
-        </p>
-        <a href="/products"><button class="button">EXPLORE PRODUCTS</button></a>
-
-    </section>
+            <p style="
+           
+            font-family: sans-serif;
+            font-size: 20px;color: white;margin: 1%;">It has great durability and finishing</p>
+            </p>
+            <br>
+            <a href="/products"><button class="button">EXPLORE PRODUCTS</button></a>
+        </div>
+    </div> 
+     
+   
+ 
 
 
     <section class="secright">
@@ -509,12 +571,11 @@ margin-left: 15%;
             <br>
             <p style="font-size: 22px;font-family: system-ui;
                 text-align: justify;padding-right: 5%;">DOLFY Doors has been a leading trading house for a wide
-                array of door and allied products since1970! We provide unique designs with
+                array of door and allied products ! We provide unique designs with
                 a superior quality finishes at stunning prices. Primarily, we offer a complete
                 range of moulded panel doors with comprehensive workmanship and highly durable
                 quality which meets the international market standards. Further, we cater to varied
-                requirements of construction, interior designing, and architecture industry with 4 decades of
-                experience.</p>
+                requirements of construction, interior designing, and architecture industry.</p>
         </div>
         <div class="thumbnail">
             <img src="sample1.jpeg" alt="logo" class="imgfluid">
@@ -634,8 +695,7 @@ margin-left: 15%;
             <img class="logo" src="logo.jpeg" alt="logo" style="margin-left:10%">
             <p
                 style="max-width: 100%;font-size: large;font-family:'Lato', sans-serif;font-size:140%;color:white; padding:5% 0% 0% 10%;">
-               Dolfy Doors has been a leading trading house for a wide array of Door and allied products
-                since 1970! With the experience of over 4 decades of happy customers,
+               Dolfy Doors has been a leading trading house for a wide array of Door and allied products ! With the experience of over 8 years of happy customers,
                 we are uniquely placed to offer the widest range of products at the best of prices to our customers
             </p>
         </div>

@@ -68,14 +68,25 @@
 }
 .button {
     color:white;
-     margin-top: 3%; 
-     margin-left:23%;
+   
+    margin-top: 3%;
      padding: 1% 2% 1% 2%;
      font-size: 16px; 
-     border:white solid 2px;
-    background:rgb(184, 124, 69);
+    border: none;
+    background:rgba(0, 0, 0, 0.374);
     text-decoration: none;
+   border: rgba(255, 255, 255, 0.7) 1px solid;
+
     
+    
+}
+
+.button:hover{
+
+background-color: rgba(255, 255, 255, 0.619);
+color: black;
+cursor: pointer;
+
 }
 a{
     text-decoration: none;
@@ -414,6 +425,20 @@ color:#000000b5;
     cursor: pointer;
     margin-top: 2%;
 }
+.options_nav:hover{
+
+   
+background-color: rgba(255, 255, 255, 0.075);
+padding: 5%;
+color: black;
+border: 1px solid rgba(255, 255, 255, 0.326);
+cursor: pointer;
+margin-right: 5%;
+width: 15%;
+border-radius: 5px;
+
+}
+
 .ultima{
     display: flex;
     width: 50%;
@@ -437,7 +462,9 @@ margin-left: 15%;
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Products</title>
+   
+    <script src="https://kit.fontawesome.com/cde8601e7e.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -445,29 +472,30 @@ margin-left: 15%;
     <section class="initial-contact">
 
 
-
-        <nav>
+  <nav >
             <div class="navigation-about">
-                 <a href="/"><img class="logo" src="logo.jpeg" alt="logo"></a>
+                <a href="/"><img class="logo" src="logo.jpeg" alt="logo"></a>
 
             </div>
-            <div id="navlist-about">
+           <div id="navlist-about">
             <ul class="navlist-about">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/products">Products</a></li>
+                <li ><a class="options_nav" href="/">Home</a></li>
+                <li ><a class="options_nav" href="/about">About</a></li>
+                <li ><a class="options_nav" href="/products">Products</a></li>
                 
 
-                <li><a href="/contact">Contact</a></li>
+                <li  ><a class="options_nav" href="/contact">Contact</a></li>
 
             </ul>
             </div>
-
+    
         </nav>
 
-        <h1>Prodcut Category</h1>
+        <h1>Product Category</h1>
         <p><a style="color: white;" href="/">Home</a>&nbsp/&nbsp<a style="color: white;"
                 href="/products">Product Category</a></p>
+         <a href = "DolfyDoors.pdf" download="Broucher"><button  class="button" style="margin-left: 74%;font-size:x-large" class="button">Broucher&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-file-arrow-down"></i></button></a>
+       
     </section>
 
     <section class="elentara">
@@ -525,8 +553,7 @@ margin-left: 15%;
             <img class="logo" src="logo.jpeg" alt="logo" style="margin-left:10%">
             <p
                 style="max-width: 100%;font-size: large;font-family:'Lato', sans-serif;font-size:140%;color:white; padding:5% 0% 0% 10%;">
-                Dolfy Doors has been a leading trading house for a wide array of Door and allied products
-                since 1970! With the experience of over 4 decades of happy customers,
+                Dolfy Doors has been a leading trading house for a wide array of Door and allied products ! With the experience of over 8 years of happy customers,
                 we are uniquely placed to offer the widest range of products at the best of prices to our customers
             </p>
         </div>
